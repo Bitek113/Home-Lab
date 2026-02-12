@@ -21,8 +21,8 @@ Welcome to my home lab repository. This project documents my hardware infrastruc
 ### Node 2: Dell OptiPlex 5050
 | ID | Service/Name | Type | OS | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **100** | Grafana | LXC | - | Monitoring Visualization (Community Script) |
-| **103** | Prometheus | LXC | - | Monitoring Database (Community Script) |
+| **100** | Grafana | LXC | Host | Monitoring Visualization (Community Script) |
+| **103** | Prometheus | LXC | Host | Monitoring Database (Community Script) |
 | **101** | Ubuntu | VM | Ubuntu | Base VM |
 | **102** | Minecraft Server | VM | Ubuntu Server | Game Server |
 | **104** | BuildAndShoot | VM | Ubuntu Server | Game Server |
