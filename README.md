@@ -26,3 +26,8 @@ Welcome to my home lab repository. This project documents my hardware infrastruc
 | **101** | Ubuntu | VM | Ubuntu | Base VM |
 | **102** | Minecraft Server | VM | Ubuntu Server | Game Server |
 | **104** | BuildAndShoot | VM | Ubuntu Server | Game Server |
+| **105** | OPNsense | VM | FreeBSD | Firewall |
+
+
+UPDATE 14.03.2026
+ I made major improvement in my homelab security and in infrastructure. Added OPNsense as Vm in my node 2
