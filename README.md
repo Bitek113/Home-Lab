@@ -29,5 +29,12 @@ Welcome to my home lab repository. This project documents my hardware infrastruc
 | **105** | OPNsense | VM | FreeBSD | Firewall |
 
 
+![HomeLab Configuration](proxmox_screenshot.png)
+
 UPDATE 14.03.2026
- I made major improvement in my homelab security and in infrastructure. Added OPNsense as Vm in my node 2
+ -I made major improvement in my homelab security and in infrastructure. Added OPNsense as Vm in my node 2
+
+
+ UPDATE 15.03.2026
+ -Configured Unbound DNS on OPNsense to act as a network-wide ad, tracker, and malware blocker.
+ -Installed and configured the CrowdSec plugin on OPNsense. It automatically fetches global threat intelligence lists, instantly blocking known attackers and malicious IP addresses from around the world directly at the firewall level.
