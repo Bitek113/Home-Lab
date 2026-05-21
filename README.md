@@ -45,3 +45,9 @@ UPDATE 14.03.2026r
  -Active Directory Lab: Deployment of a test environment featuring Windows Server 2022 and Windows 10 for learning Active Directory (new machines assigned to VLAN 40 by default).
 
  -Monitoring Optimization: Rebuild of the node monitoring containers. Migration of LXC containers to lightweight Alpine Linux base images, which significantly reduced resource consumption compared to default distributions.
+
+ UPDATE 21.05.2026r
+
+ - RAID 1 (Mirror) Implementation:** Configured a mirrored array using two 1 TB drives to ensure data redundancy. ![HomeLab Configuration](data-storage-mirror.png)
+
+ - Storage Optimization (Root FS at 98%):** Storing backups on a small SSD previously led to critical capacity issues on the root partition. To optimize the infrastructure, i add dedicated storage pool was provisioned for backups and `.iso` images, effectively offloading the primary root file system. ![HomeLab Configuration](grafana-dashboard.png)
