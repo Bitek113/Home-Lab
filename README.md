@@ -7,8 +7,8 @@ Welcome to my home lab repository. This project documents my hardware infrastruc
 | Device | Model | CPU | RAM | Storage |
 | :--- | :--- | :--- | :--- | :--- |
 | **Node 1** | Lenovo ThinkCentre M73 | Intel Core i3-4130T (2 Cores @ 2.9GHz) | 8GB DDR3| 120GB SSD |
-| **Node 2** | Dell OptiPlex 5050 | Intel Core i5-6500 (4 Cores @ 3.2GHz) | 16GB DDR4 | 256GB SSD | 2tb HDD |
-| **Network** | TL-SG108E | managed switch | - | - |
+| **Node 2** | Dell OptiPlex 5050 | Intel Core i5-6500 (4 Cores @ 3.2GHz) | 16GB DDR4 | 256GB SSD + 2TB HDD |
+| **Network**| TP-Link TL-SG108E (Smart Managed) | - | - | - |
 
 ## ⚙️ Software & Configuration
 
