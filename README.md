@@ -51,3 +51,7 @@ UPDATE 14.03.2026r
  - RAID 1 (Mirror) Implementation:** Configured a mirrored array using two 1 TB drives to ensure data redundancy. ![HomeLab Configuration](data-storage-mirror.png)
 
  - Storage Optimization (Root FS at 98%):** Storing backups on a small SSD previously led to critical capacity issues on the root partition. To optimize the infrastructure, i add dedicated storage pool was provisioned for backups and `.iso` images, effectively offloading the primary root file system. ![HomeLab Configuration](grafana-dashboard.png)
+
+ UPDATE 16.06.2026r
+
+ -Lenovo ThinkCentre M73 maintenance: I cleaned the computer using compressed air and replaced the thermal paste because the old one had dried out and was no longer effective.
