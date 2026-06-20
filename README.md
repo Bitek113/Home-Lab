@@ -55,3 +55,7 @@ UPDATE 14.03.2026r
  UPDATE 16.06.2026r
 
  -Lenovo ThinkCentre M73 maintenance: I cleaned the computer using compressed air and replaced the thermal paste because the old one had dried out and was no longer effective.
+
+  UPDATE 20.06.2026r
+
+ -Adding a new dashboard: I decided to go with a lightweight Homepage app to display some basic start screen info for my homelab. For hands-on practice, I worked on access management: creating users, generating tokens, assigning them to groups, and setting up roles and permissions on my proxmox. In the future, I plan to update Homepage to the latest version (v1.13.2) and add some new tabs.
