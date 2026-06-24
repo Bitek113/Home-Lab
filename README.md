@@ -59,3 +59,19 @@ UPDATE 14.03.2026r
   UPDATE 20.06.2026r
 
  -Adding a new dashboard: I decided to go with a lightweight Homepage app to display some basic start screen info for my homelab. For hands-on practice, I worked on access management: creating users, generating tokens, assigning them to groups, and setting up roles and permissions on my proxmox. In the future, I plan to update Homepage to the latest version (v1.13.2) and add some new tabs. ![HomeLab Configuration](homepage.png)
+
+ UPDATE 23.06.2026r
+
+Configuration of an external arbiter (QDevice) for a two-node cluster to secure the quorum and prevent split-brain scenarios. The external voting node is a VPS instance hosted in Oracle Cloud.
+
+1. VPS Configuration: Updating the base system (Oracle-Linux-8.6-aarch64), installing WireGuard, generating cryptographic keys, and configuring the network interface (generated with AI assistance).
+![HomeLab Configuration](wgshow.png)
+
+2. WireGuard Configuration via OPNsense: Creating an instance, assigning an IP address, and generating a new key pair for authenticating the home router.
+
+3. QDevice Client Installation: Installing the QDevice client on both of the local cluster nodes.
+
+4. Initial Challenges and Troubleshooting: Attempting to ping the VPS from the local machine resulted in packet loss. Opening the necessary ports via the hosting provider's GUI changed the error to "Destination Host Unreachable" — a step in the right direction. The ultimate fix required editing the WireGuard Peer associated with the VPS in OPNsense: setting the correct endpoint address, port, Allowed IPs, and public key. Once applied, all pings were successful, leaving only the quorum votes to be paired. At this point, the network environment was fully prepared.
+![HomeLab Configuration](pvecm_status.png)
+
+5. High Availability Testing and Storage Limitations: Testing the HA functionality revealed an underlying storage design issue. Proxmox HA relies heavily on the ZFS file system (for replication), whereas the nodes were formatted using standard ext4/LVM. The resolution requires either wiping and reformatting the nodes to ZFS (and restoring virtual machines from backups) or adding dedicated storage drives. Due to physical hardware constraints in the current infrastructure, adding new drives is not an option, making the wipe-and-restore method the required path forward.
